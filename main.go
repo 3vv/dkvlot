@@ -120,7 +120,7 @@ func main() {
 		}
 	}
 	// Count key(s)
-	fmt.Println("Specified " + strconv.FormatInt(keysCnt, 10) + " key(s).")
+	fmt.Println("Done " + strconv.FormatInt(keysCnt, 10) + " key(s).")
 }
 
 // Synchronize a key from the source host to the deestination host
