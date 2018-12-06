@@ -135,6 +135,17 @@ func syncKey(key string) {
 		val = sBeam.Dump(key).Val()
 		ttl = sBeam.PTTL(key).Val()
 	}
+	if ttl < -1 {
+		// NoOp
+		// !
+		ttl = 0 // Rotten
+	} else {
+		if ttl == -1 {
+			ttl = 0
+		}
+		// DoOp
+		// ...
+	}
 	if !dIsCluster {
 		dHost.Restore(key, ttl, val)
 	} else {
