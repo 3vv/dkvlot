@@ -42,7 +42,7 @@ func main() {
 		// Connect to the source host
 		if len(*s) > 0 {
 			sHosts = strings.Split(*s, ",")
-			fmt.Println(sHosts)
+			//fmt.Println(sHosts)
 			connectSourceHost()
 		} else {
 			help()
@@ -55,7 +55,7 @@ func main() {
 		// Connect to the destination host
 		if len(*d) > 0 {
 			dHosts = strings.Split(*d, ",")
-			fmt.Println(dHosts)
+			//fmt.Println(dHosts)
 			connectDestinationHost()
 		}
 		//
