@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"gopkg.in/redis.v3"
+	"gopkg.in/redis.v5"
 )
 
 func main() {
